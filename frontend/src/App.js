@@ -10,8 +10,10 @@ import "./styles/home.scss";
 import "./styles/founder.scss";
 import "./styles/menu.scss";
 import "./styles/footer.scss";
+import "./styles/contact.scss";
 
 import Footer from './components/layout/Footer';
+import Contact from './components/contact/Contact';
 
 const App = () => {
   return (
@@ -19,6 +21,7 @@ const App = () => {
    <Header />
    <Routes>
     <Route path='/' element={<Home />} />
+    <Route path='/contact' element={<Contact />} />
 
    </Routes>
    <Footer />
